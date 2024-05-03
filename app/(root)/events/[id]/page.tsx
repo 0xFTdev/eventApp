@@ -20,6 +20,7 @@ const EventDetails = async ({
   params: { id },
   searchParams,
 }: SearchParamProps) => {
+  
   const event = await getEventById(id);
 
   const relatedEvents = await getRelatedEventsByCategory({
@@ -57,7 +58,6 @@ const EventDetails = async ({
             </div>
 
             <CheckoutButton event={event} />
-
             <div className="flex flex-col gap-5">
               <div className="flex gap-2 md:gap-3">
                 <div className="p-medium-16 lg:p-regular-20 flex flex-wrap items-center gap-3">
