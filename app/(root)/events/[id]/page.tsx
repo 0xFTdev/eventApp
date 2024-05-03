@@ -93,8 +93,8 @@ const EventDetails = async ({
               </p>
               <p className="p-medium-16 lg:p-regular-18 truncate text-primary-500 underline cursor-pointer">
                 {/* {event.url} */}
-                  Mehr Informationen
                 <a href={event.url} target="_blank">
+                  Mehr Informationen
                   <ExternalLink />
                 </a>
               </p>
