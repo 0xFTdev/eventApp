@@ -7,8 +7,10 @@ const CreateEvent = () => {
   return (
     <>
       <section className="bg-primary-50 bg-dotted-pattern bg-cover py-5 bg-center md:py-3">
-        <h3 className="decoration-neutral-400 underline decoration-1 underline-offset-8 wrapper h3-bold text-center">
-          Create Event
+        <h3 className="wrapper h4-bold text-center">
+          <span className="border px-7 py-4 rounded-full border-neongreen">
+            Create Event
+          </span>
         </h3>
       </section>
       <div className="wrapper my-1">

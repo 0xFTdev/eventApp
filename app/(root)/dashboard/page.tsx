@@ -22,11 +22,19 @@ const Dashboard = async ({ searchParams }: SearchParamProps) => {
 
   return (
     <>
-      {/* My Tickets */}
       <section className="bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10">
         <div className="wrapper flex items-center justify-center sm:justify-between">
-          <h3 className="h3-bold text-center sm:text-left">My Tickets</h3>
-          <Button asChild size="lg" className="button hidden sm:flex">
+          <h3 className="h4-bold text-center sm:text-left">
+            <span className="border px-7 py-4 rounded-full border-neongreen">
+              My Tickets
+            </span>
+          </h3>
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className=" hover:bg-neongreen hover:text-black button hidden sm:flex"
+          >
             <Link href="/#events">Explore More Events</Link>
           </Button>
         </div>
@@ -45,11 +53,19 @@ const Dashboard = async ({ searchParams }: SearchParamProps) => {
         />
       </section>
 
-      {/* Events Organized */}
       <section className="bg-primary-50 bg-dotted-pattern bg-cover bg-center py-5 md:py-10">
         <div className="wrapper flex items-center justify-center sm:justify-between">
-          <h3 className="h3-bold text-center sm:text-left">Events Organized</h3>
-          <Button asChild size="lg" className="button hidden sm:flex">
+          <h3 className="h4-bold text-center sm:text-left">
+            <span className="border px-7 py-4 rounded-full border-neongreen">
+              Events Organized
+            </span>
+          </h3>
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="button hidden  hover:bg-neongreen hover:text-black sm:flex"
+          >
             <Link href="/events/create">Create New Event</Link>
           </Button>
         </div>

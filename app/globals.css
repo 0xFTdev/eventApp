@@ -73,6 +73,12 @@
   .flex-between {
     @apply flex justify-between items-center;
   }
+
+  .highlightBrush_1 {
+    background: url(//s2.svgbox.net/pen-brushes.svg?ic=brush-1&color=C6FF00);
+    margin: -2px -6px;
+    padding: 10px 20px;
+  }
 }
 
 /* TYPOGRAPHY */
@@ -102,6 +108,10 @@
 /* 32 */
 .h4-medium {
   @apply font-medium text-[32px] leading-[40px];
+}
+
+.h4-bold {
+  @apply font-medium text-[18px] leading-[40px];
 }
 
 /* 28 */

@@ -25,7 +25,10 @@ export default async function Home({ searchParams }: SearchParamProps) {
         <div className="wrapper grid grid-cols-1 gap-5 md:grid-cols-2 2xl:gap-0">
           <div className="flex flex-col justify-center gap-8">
             <h1 className="h1-bold">
-              One platform, unforgettable
+              One platform,{" "}
+              <span className="highlightBrush_1 dark:text-black leading-relaxed">
+                unforgettable
+              </span>
               <span className="font-tanmeringue"> Experiences.</span>
             </h1>
             <p className="p-regular-20 md:p-regular-24">
@@ -36,7 +39,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
               variant="outline"
               size="lg"
               asChild
-              className="button w-full sm:w-fit"
+              className="button w-full hover:bg-neongreen hover:text-black sm:w-fit"
             >
               <Link href="#events">Take me to the events</Link>
             </Button>
@@ -47,7 +50,14 @@ export default async function Home({ searchParams }: SearchParamProps) {
             alt="hero"
             width={1000}
             height={1000}
-            className="max-h-[70vh] object-contain object-center 2xl:max-h-[50vh] dark:filter dark:invert dark:brightness-9000 dark:contrast-150 dark:grayscale"
+            className="max-h-[70vh] object-contain object-center 2xl:max-h-[50vh]  dark:hidden"
+          />
+          <Image
+            src="/assets/images/hero-dark.png"
+            alt="hero"
+            width={1000}
+            height={1000}
+            className="max-h-[70vh] object-contain hidden object-center 2xl:max-h-[50vh] dark:block"
           />
         </div>
       </section>
@@ -58,7 +68,7 @@ export default async function Home({ searchParams }: SearchParamProps) {
       >
         <h2 className="h2-bold">
           <span className="font-tanmeringue">Explore</span> hundreds
-          <br /> of events.
+          <br /> of <span>events</span>
         </h2>
 
         <div className="flex w-full flex-col gap-5 md:flex-row">
